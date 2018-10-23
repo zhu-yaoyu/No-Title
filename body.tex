@@ -1,8 +1,8 @@
 \section{Introduction}
 
-In recent years, location privacy has become an increasingly concerned issue, and the preserving mechanisms based on differential privacy has proved to be the best way to resist background knowledge attacks. In the location privacy-preserving model based on differential privacy, there are two main implementation methods. One is based on the obfuscation on the number: constructing a spatial grid structure and adding noise to the number of workers in the grid; Another way is based on geo-obfuscation: obfuscating the real location of the worker and uploading it.
+In recent years, location privacy has become an increasingly concerned issue, and differential privacy has proved to be the best way to resist background knowledge attacks. In the location privacy-preserving model based on differential privacy, there are two main implementation methods. One is based on the obfuscation on the number: constructing a spatial grid structure and adding noise to the number of workers in the grid; Another way is based on differential geo-obfuscation mechanisms: obfuscating the real location of the worker and uploading it.
 
-We mainly consider the geo-obfuscation in this paper. Miguel E. Andrés et al. proposed a location difference privacy framework based on Laplace obfuscation. In recent years, some scholars have put forward the implementation method of constructing linear programming model based on discrete obfuscation and demonstrated that this method could play a useful role in optimizing the travel distance and improving the coverage of target location.
+We mainly consider the differential geo-obfuscation in this paper. Miguel E. Andrés et al. proposed a location difference privacy framework based on Laplace obfuscation. In recent years, some scholars have put forward a mixed-integer non-linear programming model and demonstrated that this model could play a useful role in optimizing the travel distance and improving the coverage of the target location.
 Based on location privacy-preserving, we consider an essential performance evaluation index in crowdsourcing problems, which is the task acceptance rate. When the tasks are assigned to workers on a crowdsourcing platform, it is uncertain whether workers will accept the tasks. Rejection may occur with long travel distance or low reward, which is what crowdsourcing platform is trying to avoid when optimizing the allocation scheme. Therefore, we choose the worker's acceptance rate as the performance index. At the same time, we optimize and compare the task allocation mechanisms with mainstream privacy-preserving methods based on the location differential privacy model.
 
 Moreover, not only performance but also overhead need to be considered in crowdsourcing problems. At the crowdsourcing server, bandwidth overhead and time overhead need to be considered. Since the crowdsourcing server needs to return all tasks within the area of retrieval (AOR) to the worker, the bandwidth overhead can be represented as area $S_{AOR}$. On the other hand, the time overhead depends on the different optimization methods. Comparing with the Laplace method, the method based on Benders Decomposition that allows the obfuscation function and task allocation strategy to iterate with each other requires more calculation overhead and correspondingly more time overhead. We will analyze the bandwidth overhead and time overhead respectively.
@@ -10,7 +10,7 @@ The main work of this paper is as follows:
 
 1) Based on the framework of differential geo-obfuscation privacy-preserving, we introduce an improved model of the task acceptance rate in crowdsourcing problems. We also consider the task acceptance rate as the optimization goal from the perspective of task allocation.
 
-2) We optimize the task acceptance rate and get the optimal solution using the current two mainstream obfuscation mechanisms under the framework of differential geo-obfuscation privacy-preserving. Considering the overhead of crowdsourcing server, we analyze and compare two obfuscation mechanisms from the perspective of bandwidth overhead and runtime overhead respectively.
+2) We optimize the task acceptance rate and get the optimal solution using the two current task allocation mechanisms under the framework of differential geo-obfuscation privacy-preserving. Considering the overhead of crowdsourcing server, we analyze and compare two task allocation mechanisms from the perspective of bandwidth overhead and runtime overhead respectively.
 
 3) By constructing a comprehensive evaluation model, we consider the tradeoff between privacy and bandwidth overhead and solve the optimal privacy budget choice.
 
@@ -21,7 +21,7 @@ Crowdsourcing is aimed at ordinary users that have not explicitly been assigned,
 
 \subsection{Differential Privacy}
 \begin{definition}
-	Differential privacy is defined on adjacent datasets. For two adjacent datasets $D_1$ and $D_2$, $Q$ is a randomized algorithm performing a query operation on the database. Let $Range(Q)$ denote the set of all possible outputs of the algorithm $Q$. We say that $Q$ satisfies the $\varepsilon$-differential-privacy mechanism if and only if the following inequality holds, $\forall S \in Range(Q)$:
+	Differential privacy is defined on adjacent datasets which differ by only one record. For two adjacent datasets $D_1$ and $D_2$, $Q$ is a randomized algorithm performing a query operation on the database. Let $Range(Q)$ denote the set of all possible outputs of the algorithm $Q$. We say that $Q$ satisfies the $\varepsilon$-differential-privacy mechanism if and only if the following inequality holds, $\forall S \in Range(Q)$:
 	$$
 	P_r[Q(D_1)=S]\leq e^\varepsilon \cdot P_r [Q(D_2)=S]
 	$$
@@ -30,7 +30,7 @@ Crowdsourcing is aimed at ordinary users that have not explicitly been assigned,
 Andrés et al. (2013) gave a basic framework of location privacy-preserving based on differential privacy mechanism and extended the concept of one-dimensional differential privacy to the two-dimensional plane. The key insight is that for any point $L_0 \in \mathbb R^2$ in the plane, an obfuscated point $L^* \in \mathbb R^2$ is generated near $L_0$ through a specific noise function. From the perspective of privacy-preserving of the user's location, the user uploads the obfuscated location $L^*$ instead of the real location $L_0$.
 
 \begin{definition}
-	The mechanism $M$ that takes a location as input satisfies $\varepsilon$-location-differential-privacy if the following inequality holds $\forall S \in Range(M)$: 
+	The mechanism $M$ that takes a location as input satisfies $\varepsilon$-geo-indistinguishability if the following inequality holds $\forall S \in Range(M)$: 
 	$$
 	\frac{P(S|L_1)}{P(S|L_2)} \leq e^{\varepsilon d(L_1,L_2)}
 	$$
@@ -51,12 +51,12 @@ The flowchart~\ref{img:SysModel} indicates the procedures of the geo-obfuscation
 The detailed procedures are as follow:
 First, the crowdsourcing server generates the location obfuscation function based on the differential privacy framework and sends it to workers. After obfuscating the real location locally, the worker uploads the obfuscated location to the server. Meanwhile, the task requester uploads the location of the task to the server. The crowdsourcing server then optimizes the task allocation according to specific evaluation standards. Finally, the workers choose to accept or reject the tasks assigned to them.
 
-Many of the current crowdsourcing platforms collect workers' location information directly, which can lead to the disclosure of workers' location privacy. However, by uploading the obfuscated location, the privacy of the location can be adequately protected. The privacy models will be analyzed in the next section.
+Many of the current crowdsourcing platforms collect workers' location information directly, which can lead to the disclosure of workers' location privacy. However, by uploading the obfuscated location, the privacy of the location can be adequately protected. The differential obfuscation mechanisms will be analyzed in the next section.
 
 Speaking of optimizing task allocation, Leye Wang (WWW' 17) optimized the planar crowdsourcing task allocation by minimizing the travel distance. However, in reality, workers accept the tasks assigned to them with a certain probability. If specific tasks assigned by the server are frequently rejected by workers, the overall performance of the platform will be significantly affected. Therefore, the overall task acceptance rate is the optimization goal in task allocation issue. The task acceptance rate will be modeled and analyzed later.
 
-\subsection{Privacy Model}
-The current mainstream privacy-preserving framework is based on the location differential privacy model. The location obfuscation function mentioned in the previous section also satisfies the definition of location differential privacy. Currently, there are two main generating mechanisms of obfuscation function, one is based on the Laplace mechanism, and the other is based on Benders Decomposition mechanism (Leye Wang, WWW'17).
+\subsection{Differential Obfuscation Model}
+The current mainstream privacy-preserving framework is based on the location differential privacy model. The location obfuscation function mentioned in the previous section also satisfies the definition of location differential privacy. Currently, there are two differential obfuscation mechanisms, one is based on the Laplace mechanism, and the other is based on Benders Decomposition mechanism (Leye Wang, WWW'17).
 
 \subsubsection{Planar Laplace Mechanism}
 The most common mechanism in the field of location privacy-preserving uses planar Laplace distribution in the two-dimensional plane. Under planar Laplace obfuscation, the probability density of obfuscated point $L^*$ in the plane decreases exponentially as the distance from the real location $L_0$ increases. 
@@ -72,7 +72,7 @@ This method was first used to solve the linear programming problems. In this met
 
 The basic idea of BD method is to use the definition of differential privacy to set up linear programming equations, and decompose the optimization problem into an obfuscation function problem (P-subproblem) and a task allocation problem (X-subproblem). The solution of each subproblem is substituted as a known parameter of the other subproblem so that each subproblem is transformed into a conventional linear programming problem that can be solved easily. Thus, the obfuscation mechanism and the task allocation mechanism can iterate over each other to find the optimal solution.
 
-(Leye Wang WWW' 17) Wang used this method to optimize the travel distance of workers in crowdsourcing problems and decomposed the mixed integer nonlinear programming problem into two linear programming subproblems. Finally, Wang proved that this method could effectively reduce the overall travel distance of workers on the premise of satisfying the definition of differential privacy.
+(Leye Wang WWW' 17) Wang used this method to optimize the travel distance of workers in crowdsourcing problems and decomposed the mixed-integer non-linear programming problem into two linear programming subproblems. Finally, Wang proved that this method could effectively reduce the overall travel distance of workers on the premise of satisfying the definition of differential privacy.
 
 \subsection{Optimization Goal and Performance Analysis}
 We introduced the task allocation process on the crowdsourcing platform earlier. Next, we consider the overall acceptance rate as the optimization goal of the actual situation. Moreover, system overhead is analyzed and compared, and further details emerge in a later section.
@@ -91,7 +91,9 @@ So far, most scholars in the crowdsourcing field used the univariate model to mo
 Intuitively, this is one-sided. Therefore, we will introduce an improved bivariate model in a later section.
 
 \subsubsection{System Overhead}
-From the perspective of the crowdsourcing platform, tasks need to be assigned according to the locations uploaded by users, including searching for locations within the spatial area. On the other hand, crowdsourcing service based on LBS requires high real-time performance. As the scale of the problem, i.e., the number of workers ($N_w$) and the number of tasks ($N_t$), increases, the time spent on solving optimization problems will also increase accordingly. Therefore, it is necessary to analyze the overhead problem in the crowdsourcing model.
+In spatial crowdsourcing model, crowdsourcing workers often need to query nearby tasks. Because of the difference in the differential obfuscation mechanism, the search area that the crowdsourcing server actually needs is different, which means that the search overhead is different. In addition to search overhead, we also need to consider the time overhead. In the task assignment process, the time complexity based on different obfuscation mechanisms is also different.
+
+On the other hand, crowdsourcing service based on LBS requires high real-time performance. As the scale of the problem, i.e., the number of workers and tasks, increases, the time spent on solving optimization problems will also increase accordingly. Therefore, it is necessary to analyze the overhead problem in the crowdsourcing model.We will analyze the overhead in section 6.
 
 \section{ANALYSIS ON TASK ACCEPTANCE RATE IN CROWDSOURCING}
 \subsection{Improvement of the Task Acceptance Rate Model}
@@ -131,7 +133,7 @@ $$
 \end{figure}
 
 \subsection{Optimization of Task Acceptance Rate}
-We aim to maximize overall $AR$ while satisfying the differential privacy constraints. Considering that the current differential privacy mechanism mainly includes Laplace mechanism and Benders Decomposition linear programming mechanism, we will use these two mechanisms to optimize $AR$.
+We aim to maximize overall $AR$ while satisfying the differential privacy constraints. Considering that the current task allocation mechanisms of differential privacy mainly includes Laplace mechanism and Benders Decomposition linear programming mechanism, we will use these two mechanisms to optimize $AR$.
 
 Unlike Laplace mechanism, the mechanism based on solving linear programming equation with BD algorithm is to transform the location obfuscation function into discrete form $P(L^*|L)$, and the distribution is uncertain in advance, which needs to be iteratively optimized with the task allocation problem (X-subproblem). On the other hand, the obfuscation function of the Laplace mechanism satisfies the planar two-dimensional Laplace distribution, so we only need to adjust the task allocation strategy to optimize $AR$. These are the essential difference between the two ways.
 
@@ -169,9 +171,11 @@ Unlike the Laplace mechanism, $P(L^*|L)$ here does not follow a specific distrib
 
 \section{OVERHEAD ANALYSIS}
 \subsection{Bandwidth Overhead}
+Because workers often need to query nearby tasks. We use $R_w$ to indicate the scope of the worker's query, centered on the true position of the worker, and the circle with $R_w$ radius is the area of interest to the worker, called $R_{AOI}$.
+
 The crowdsourcing server obtains the obfuscation location uploaded by the worker instead of real location. In order to accurately return all tasks within the range $R_w$ of the worker, the crowdsourcing server needs to search with a larger radius near the obfuscation location so that this larger circle with radius $R_{AOR}$ can cover the smaller circle with radius $R_{AOI}$ which is the real range needed to be covered. The larger the search area is, the larger the bandwidth overhead is. (Andrés, Geo-Indistinguishability, CCS’13)
 
-We applied the parameters given by Geo in the calculation of bandwidth overhead - an average of 0.84 KB per POI. Moreover, we assume an average of 20 crowdsourcing tasks per square kilometer. Thus, we can simplify the problem by finding actual search area $S_{AOR}$. Next, the above two obfuscation mechanisms will be analyzed separately.
+Based on different task allocation mechanisms, the required search area is also different, so it is necessary to compare the search overhead. Thus, we can simplify the problem by finding actual search area $S_{AOR}$. Next, the above two task allocation mechanisms will be analyzed separately.
 
 $S_{AOR}$ can be expressed as a weighted average of multiple areas of search circles. The radius of each search circle is represented by $r_i$, $r_i=d(L^*,L_i)+R_w$. $R_w$ indicates that workers only accept tasks within the range of $R_w$. The diagram is as follows:~\ref{img:AOR}
 
@@ -187,7 +191,7 @@ $$
 $$
 	\bar{S}=\frac{\sum_i S(L^*_i)}{N_w}
 $$
-$P(L^*_k,L_i)$ represents the possibility that location $L_i$ is obfuscated to location $L^*_k$. $S(L^*_k)$ represents the expectation of the actual search area $S_{AOR}$. $N_w$ indicates the number of workers, i.e., number of obfuscated locations uploaded to crowdsourcing server. $\bar{S}$ is the average of $S(L^*_i)$. 
+$P(L^*_k,L_i)$ represents the possibility that location $L_i$ is obfuscated to location $L^*_k$. $S(L^*_k)$ represents the weighted average of the actual search area $S_{AOR}$. $N_w$ indicates the number of workers, i.e., number of obfuscated locations uploaded to crowdsourcing server. $\bar{S}$ is the average of $S(L^*_i)$. 
 
 With the mechanism using the Benders Decomposition algorithm, $P(L^*_k,L_i)$ is obtained by solving linear programming problems P and X iteratively. Then we can calculate the corresponding bandwidth overhead from $S_{AOR}$. 
 
@@ -205,7 +209,7 @@ In the differential privacy mechanism, the smaller the privacy budget is, the be
 We aim to consider the trade-off between privacy and search overhead comprehensively. First, we use the search area to represent the search overhead. Then, our optimization goal which based on the privacy budget and search area is to reduce the overhead as much as possible while ensuring privacy. Finally, we work out the optimal searching scheme and $\varepsilon$ by minimizing the optimization goal.
 
 \subsection{Trade-off Expression}
-We can construct the expression of $S_{AOR}$ as a negative correlation function of $\varepsilon$, i.e., $S(\varepsilon)$, based on the results in section 5.1.2. Then, denote $\hat{\varepsilon}$ as follows:
+We can construct the expression of $S_{AOR}$ as a negative correlation function of $\varepsilon$, i.e., $S(\varepsilon)$. Then, denote $\hat{\varepsilon}$ as follows:
 $$
 	\hat{\varepsilon}=\arg \min_\varepsilon \{ \beta \cdot \varepsilon + \ln (S(\varepsilon)) \}
 $$
