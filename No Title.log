@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.1)  25 OCT 2018 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.1)  25 OCT 2018 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1175,7 +1175,7 @@ tial geo-obfuscation privacy-
  []
 
 
-Package caption Warning: \label without proper reference on input line 45.
+Package caption Warning: \label without proper reference on input line 46.
 See the caption package documentation for explanation.
 
 
@@ -1186,262 +1186,243 @@ File: SysModel.png Graphic file (type png)
 <use SysModel.png>
 Package pdftex.def Info: SysModel.png  used on input line 45.
 (pdftex.def)             Requested size: 241.84842pt x 97.00587pt.
-
-LaTeX Warning: Reference `Sec3.2' on page 2 undefined on input line 53.
-
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 56.
 [2.2 <./SysModel.png>]
-
-LaTeX Warning: Reference `Sec3.1' on page 3 undefined on input line 59.
-
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 62.
 
-LaTeX Warning: Reference `Sec5' on page 3 undefined on input line 78.
 
-
-Package caption Warning: \label without proper reference on input line 85.
+Package caption Warning: \label without proper reference on input line 87.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:UniModel' on page 3 undefined on input line 83.
 
 Package epstopdf Info: Source file: <UniModel.eps>
-(epstopdf)                    date: 2018-10-24 10:41:22
-(epstopdf)                    size: 15356 bytes
+(epstopdf)                    date: 2018-10-25 16:58:08
+(epstopdf)                    size: 15414 bytes
 (epstopdf)             Output file: <UniModel-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:40
-(epstopdf)                    size: 12510 bytes
+(epstopdf)                    date: 2018-10-25 16:58:17
+(epstopdf)                    size: 12161 bytes
 (epstopdf)             Command: <repstopdf --outfile=UniModel-eps-converted-to.
 pdf UniModel.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<UniModel-eps-converted-to.pdf, id=140, 1155.31625pt x 466.74374pt>
+<UniModel-eps-converted-to.pdf, id=143, 562.1pt x 431.6125pt>
 File: UniModel-eps-converted-to.pdf Graphic file (type pdf)
 <use UniModel-eps-converted-to.pdf>
 Package pdftex.def Info: UniModel-eps-converted-to.pdf  used on input line 86.
-(pdftex.def)             Requested size: 506.295pt x 204.5346pt.
-
-Overfull \hbox (265.1475pt too wide) in paragraph at lines 86--88
- [][] 
- []
-
-
-LaTeX Warning: Reference `Sec4.1' on page 3 undefined on input line 91.
-
-
-LaTeX Warning: Reference `Sec5' on page 3 undefined on input line 96.
-
+(pdftex.def)             Requested size: 241.84842pt x 185.7017pt.
 [3.3 <./UniModel-eps-converted-to.pdf>]
 
-Package caption Warning: \label without proper reference on input line 113.
+Package caption Warning: \label without proper reference on input line 116.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:LinTanh' on page 4 undefined on input line 104.
 
 Package epstopdf Info: Source file: <LinTanh.eps>
-(epstopdf)                    date: 2018-10-22 23:48:57
+(epstopdf)                    date: 2018-10-25 15:01:10
 (epstopdf)                    size: 52357 bytes
 (epstopdf)             Output file: <LinTanh-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:41
-(epstopdf)                    size: 29242 bytes
+(epstopdf)                    date: 2018-10-25 15:01:22
+(epstopdf)                    size: 29078 bytes
 (epstopdf)             Command: <repstopdf --outfile=LinTanh-eps-converted-to.p
 df LinTanh.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
-<LinTanh-eps-converted-to.pdf, id=157, 1155.31625pt x 436.63126pt>
+<LinTanh-eps-converted-to.pdf, id=162, 943.525pt x 391.4625pt>
 File: LinTanh-eps-converted-to.pdf Graphic file (type pdf)
 <use LinTanh-eps-converted-to.pdf>
 Package pdftex.def Info: LinTanh-eps-converted-to.pdf  used on input line 115.
-(pdftex.def)             Requested size: 241.84842pt x 91.40211pt.
+(pdftex.def)             Requested size: 241.84842pt x 100.33829pt.
 [4.4 <./LinTanh-eps-converted-to.pdf>]
 
-Package caption Warning: \label without proper reference on input line 176.
+Package caption Warning: \label without proper reference on input line 180.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:AOR' on page 5 undefined on input line 176.
 
 Package epstopdf Info: Source file: <AOR.eps>
-(epstopdf)                    date: 2018-10-24 15:05:32
-(epstopdf)                    size: 9067 bytes
+(epstopdf)                    date: 2018-10-25 14:56:35
+(epstopdf)                    size: 9065 bytes
 (epstopdf)             Output file: <AOR-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:43
-(epstopdf)                    size: 5376 bytes
+(epstopdf)                    date: 2018-10-25 14:57:10
+(epstopdf)                    size: 5335 bytes
 (epstopdf)             Command: <repstopdf --outfile=AOR-eps-converted-to.pdf A
 OR.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
-<AOR-eps-converted-to.pdf, id=172, 1155.31625pt x 457.71pt>
+<AOR-eps-converted-to.pdf, id=178, 391.4625pt x 321.2pt>
 File: AOR-eps-converted-to.pdf Graphic file (type pdf)
 <use AOR-eps-converted-to.pdf>
 Package pdftex.def Info: AOR-eps-converted-to.pdf  used on input line 179.
-(pdftex.def)             Requested size: 241.84842pt x 95.81464pt.
+(pdftex.def)             Requested size: 241.84842pt x 198.44109pt.
 [5.5 <./AOR-eps-converted-to.pdf>]
 
-Package caption Warning: \label without proper reference on input line 235.
+Package caption Warning: \label without proper reference on input line 239.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:LinSim' on page 6 undefined on input line 235.
 
 Package epstopdf Info: Source file: <LinSim.eps>
-(epstopdf)                    date: 2018-10-23 21:29:33
-(epstopdf)                    size: 24544 bytes
+(epstopdf)                    date: 2018-10-25 16:51:12
+(epstopdf)                    size: 24677 bytes
 (epstopdf)             Output file: <LinSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:44
-(epstopdf)                    size: 12511 bytes
+(epstopdf)                    date: 2018-10-25 16:52:25
+(epstopdf)                    size: 13051 bytes
 (epstopdf)             Command: <repstopdf --outfile=LinSim-eps-converted-to.pd
 f LinSim.eps>
 (epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
-<LinSim-eps-converted-to.pdf, id=187, 1155.31625pt x 445.665pt>
+<LinSim-eps-converted-to.pdf, id=192, 1124.2pt x 301.125pt>
 File: LinSim-eps-converted-to.pdf Graphic file (type pdf)
 <use LinSim-eps-converted-to.pdf>
 Package pdftex.def Info: LinSim-eps-converted-to.pdf  used on input line 238.
-(pdftex.def)             Requested size: 506.295pt x 195.29756pt.
+(pdftex.def)             Requested size: 506.295pt x 135.61526pt.
 
-Package caption Warning: \label without proper reference on input line 243.
+Package caption Warning: \label without proper reference on input line 247.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:LinD4D' on page 6 undefined on input line 243.
 
 Package epstopdf Info: Source file: <LinD4D.eps>
-(epstopdf)                    date: 2018-10-23 21:55:12
-(epstopdf)                    size: 24915 bytes
+(epstopdf)                    date: 2018-10-25 16:44:56
+(epstopdf)                    size: 25217 bytes
 (epstopdf)             Output file: <LinD4D-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:46
-(epstopdf)                    size: 12600 bytes
+(epstopdf)                    date: 2018-10-25 16:45:05
+(epstopdf)                    size: 13216 bytes
 (epstopdf)             Command: <repstopdf --outfile=LinD4D-eps-converted-to.pd
 f LinD4D.eps>
 (epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
-<LinD4D-eps-converted-to.pdf, id=189, 1155.31625pt x 448.67625pt>
+<LinD4D-eps-converted-to.pdf, id=194, 1124.2pt x 301.125pt>
 File: LinD4D-eps-converted-to.pdf Graphic file (type pdf)
 <use LinD4D-eps-converted-to.pdf>
 Package pdftex.def Info: LinD4D-eps-converted-to.pdf  used on input line 246.
-(pdftex.def)             Requested size: 506.295pt x 196.61714pt.
+(pdftex.def)             Requested size: 506.295pt x 135.61526pt.
 
-Package caption Warning: \label without proper reference on input line 254.
+Package caption Warning: \label without proper reference on input line 258.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:TanhSim' on page 6 undefined on input line 254.
 
 Package epstopdf Info: Source file: <TanhSim.eps>
-(epstopdf)                    date: 2018-10-23 19:03:30
-(epstopdf)                    size: 25090 bytes
+(epstopdf)                    date: 2018-10-25 16:46:33
+(epstopdf)                    size: 25218 bytes
 (epstopdf)             Output file: <TanhSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:48
-(epstopdf)                    size: 12709 bytes
+(epstopdf)                    date: 2018-10-25 16:47:55
+(epstopdf)                    size: 13216 bytes
 (epstopdf)             Command: <repstopdf --outfile=TanhSim-eps-converted-to.p
 df TanhSim.eps>
 (epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
-<TanhSim-eps-converted-to.pdf, id=191, 1155.31625pt x 439.6425pt>
+<TanhSim-eps-converted-to.pdf, id=196, 1124.2pt x 301.125pt>
 File: TanhSim-eps-converted-to.pdf Graphic file (type pdf)
 <use TanhSim-eps-converted-to.pdf>
 Package pdftex.def Info: TanhSim-eps-converted-to.pdf  used on input line 257.
-(pdftex.def)             Requested size: 506.295pt x 192.6584pt.
+(pdftex.def)             Requested size: 506.295pt x 135.61526pt.
 
-Package caption Warning: \label without proper reference on input line 262.
+Package caption Warning: \label without proper reference on input line 266.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:TanhD4D' on page 6 undefined on input line 262.
 
 Package epstopdf Info: Source file: <TanhD4D.eps>
-(epstopdf)                    date: 2018-10-23 22:07:52
-(epstopdf)                    size: 20870 bytes
+(epstopdf)                    date: 2018-10-25 16:52:08
+(epstopdf)                    size: 23677 bytes
 (epstopdf)             Output file: <TanhD4D-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:49
-(epstopdf)                    size: 11273 bytes
+(epstopdf)                    date: 2018-10-25 16:52:27
+(epstopdf)                    size: 11242 bytes
 (epstopdf)             Command: <repstopdf --outfile=TanhD4D-eps-converted-to.p
 df TanhD4D.eps>
 (epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
-<TanhD4D-eps-converted-to.pdf, id=193, 1155.31625pt x 451.6875pt>
+<TanhD4D-eps-converted-to.pdf, id=198, 1124.2pt x 301.125pt>
 File: TanhD4D-eps-converted-to.pdf Graphic file (type pdf)
 <use TanhD4D-eps-converted-to.pdf>
 Package pdftex.def Info: TanhD4D-eps-converted-to.pdf  used on input line 265.
-(pdftex.def)             Requested size: 506.295pt x 197.93672pt.
+(pdftex.def)             Requested size: 506.295pt x 135.61526pt.
 
-Package caption Warning: \label without proper reference on input line 274.
+Package caption Warning: \label without proper reference on input line 278.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:SAOR' on page 6 undefined on input line 274.
 
 Package epstopdf Info: Source file: <SAOR.eps>
-(epstopdf)                    date: 2018-10-23 20:46:26
-(epstopdf)                    size: 23460 bytes
+(epstopdf)                    date: 2018-10-25 16:51:49
+(epstopdf)                    size: 23694 bytes
 (epstopdf)             Output file: <SAOR-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:51
-(epstopdf)                    size: 10325 bytes
+(epstopdf)                    date: 2018-10-25 16:52:28
+(epstopdf)                    size: 11242 bytes
 (epstopdf)             Command: <repstopdf --outfile=SAOR-eps-converted-to.pdf 
 SAOR.eps>
 (epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
-<SAOR-eps-converted-to.pdf, id=195, 1155.31625pt x 442.65375pt>
+<SAOR-eps-converted-to.pdf, id=200, 1124.2pt x 301.125pt>
 File: SAOR-eps-converted-to.pdf Graphic file (type pdf)
 <use SAOR-eps-converted-to.pdf>
 Package pdftex.def Info: SAOR-eps-converted-to.pdf  used on input line 277.
-(pdftex.def)             Requested size: 506.295pt x 193.97798pt.
+(pdftex.def)             Requested size: 506.295pt x 135.61526pt.
 
-Package caption Warning: \label without proper reference on input line 314.
+Package caption Warning: \label without proper reference on input line 318.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:CurveBD' on page 6 undefined on input line 314.
 
 Package epstopdf Info: Source file: <CurveBD.eps>
-(epstopdf)                    date: 2018-10-24 10:33:27
+(epstopdf)                    date: 2018-10-25 14:53:51
 (epstopdf)                    size: 17929 bytes
 (epstopdf)             Output file: <CurveBD-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:52
-(epstopdf)                    size: 10605 bytes
+(epstopdf)                    date: 2018-10-25 14:53:58
+(epstopdf)                    size: 10569 bytes
 (epstopdf)             Command: <repstopdf --outfile=CurveBD-eps-converted-to.p
 df CurveBD.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-<CurveBD-eps-converted-to.pdf, id=198, 1155.31625pt x 463.7325pt>
+<CurveBD-eps-converted-to.pdf, id=203, 742.775pt x 301.125pt>
 File: CurveBD-eps-converted-to.pdf Graphic file (type pdf)
 <use CurveBD-eps-converted-to.pdf>
 Package pdftex.def Info: CurveBD-eps-converted-to.pdf  used on input line 317.
-(pdftex.def)             Requested size: 241.84842pt x 97.07535pt.
+(pdftex.def)             Requested size: 241.84842pt x 98.04366pt.
 
-Package caption Warning: \label without proper reference on input line 331.
+Package caption Warning: \label without proper reference on input line 335.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `img:CurveLP' on page 6 undefined on input line 331.
 
 Package epstopdf Info: Source file: <CurveLP.eps>
-(epstopdf)                    date: 2018-10-24 10:25:56
+(epstopdf)                    date: 2018-10-25 14:55:24
 (epstopdf)                    size: 16975 bytes
 (epstopdf)             Output file: <CurveLP-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-25 12:30:54
-(epstopdf)                    size: 10264 bytes
+(epstopdf)                    date: 2018-10-25 14:55:45
+(epstopdf)                    size: 10209 bytes
 (epstopdf)             Command: <repstopdf --outfile=CurveLP-eps-converted-to.p
 df CurveLP.eps>
 (epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
-<CurveLP-eps-converted-to.pdf, id=200, 1155.31625pt x 460.72125pt>
+<CurveLP-eps-converted-to.pdf, id=205, 742.775pt x 301.125pt>
 File: CurveLP-eps-converted-to.pdf Graphic file (type pdf)
 <use CurveLP-eps-converted-to.pdf>
 Package pdftex.def Info: CurveLP-eps-converted-to.pdf  used on input line 334.
-(pdftex.def)             Requested size: 241.84842pt x 96.44499pt.
-[6.6])
+(pdftex.def)             Requested size: 241.84842pt x 98.04366pt.
+[6.6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [7.7 <./LinSim-eps-converted-to.pdf> <./LinD4D-eps-converted-to.pdf> <./TanhS
+im-eps-converted-to.pdf>]
 No file "No Title".bbl.
-[7.7 <./LinSim-eps-converted-to.pdf> <./LinD4D-eps-converted-to.pdf>] [8.8 <./T
-anhSim-eps-converted-to.pdf> <./TanhD4D-eps-converted-to.pdf>] [9.9 <./SAOR-eps
--converted-to.pdf>] [10.10
-
-
- <./CurveBD-eps-converted-to.pdf> <./CurveLP-eps-converted-to.pdf>]
+[8.8 <./TanhD4D-eps-converted-to.pdf> <./SAOR-eps-converted-to.pdf> <./CurveBD-
+eps-converted-to.pdf> <./CurveLP-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
  (./No Title.aux)
@@ -1453,18 +1434,15 @@ Package rerunfilecheck Info: File `"No Title".out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 18406 strings out of 492639
- 278426 string characters out of 6133088
- 396717 words of memory out of 5000000
+ 18404 strings out of 492639
+ 278413 string characters out of 6133088
+ 396929 words of memory out of 5000000
  21380 multiletter control sequences out of 15000+600000
  212116 words of font info for 390 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,12n,94p,1176b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,1176b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{c:/tex
 live/2018/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{c:/texlive/2018/te
 xmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{c:/texlive/2018/texmf-dist/
@@ -1488,10 +1466,10 @@ c:/texlive/2018/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb><c:/texlive/2018
 ts/type1/public/newtx/txexs.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/
 txfonts/txsyb.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/newtx/txsys.pf
 b><c:/texlive/2018/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on "No Title.pdf" (10 pages, 719039 bytes).
+Output written on "No Title.pdf" (8 pages, 719786 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 62 named destinations out of 1000 (max. 500000)
  59644 words of extra memory for PDF output out of 61914 (max. 10000000)
 
