@@ -212,7 +212,7 @@ In the differential privacy mechanism, the smaller the privacy budget is, the be
 We aim to consider the trade-off between privacy and search overhead comprehensively. First, we use the search area to represent the search overhead. Then, our optimization goal which based on the privacy budget and search area is to reduce the overhead as much as possible while ensuring privacy. Finally, we work out the optimal searching scheme and $\varepsilon$ by minimizing the optimization goal.
 
 \subsection{Trade-off Expression} % 6.2
-We can construct the expression of he average search area $\bar{S}$ as a negative correlation function of $\varepsilon$. Then, denote the trade-off expression $T$ as follows:
+We can construct the expression of he average search area $\bar{S}$ as a negative correlation function of $\varepsilon$. Then, we introduce the trade-off expression $T$ as follows:
 $$
 	\hat{\varepsilon}=\arg \min_\varepsilon T(\varepsilon , \bar{S})=\arg \min_\varepsilon \{ \beta \cdot \varepsilon + \ln (\bar{S}) \}
 $$
@@ -330,7 +330,7 @@ The approximate expression of $\bar{S}$ is $\bar{S}=\frac{p_1}{\varepsilon + q_1
 $$
 	T(\varepsilon , \bar{S})=\beta \cdot \varepsilon + \ln (\bar{S}) \quad \beta \in (0,1)
 $$
-When $\beta=0.6$, we plot $T$ against $\varepsilon$:
+When $\beta=0.6$, we plot $T$ against $\varepsilon$ in Figure~\ref{img:CurveLP}.
 
 The minimum point of the graph corresponds to the optimal $\varepsilon$ we seek. At this point, we can think that not only the privacy of the user's location is preserved, but also the excessive search overhead is avoided. 
 
@@ -347,7 +347,7 @@ The approximate expression of $\bar{S}$ is $\bar{S}(\varepsilon)=\frac{p_1 \cdot
 $$
 	T(\varepsilon , \bar{S})=\beta \cdot \varepsilon + \ln (\bar{S}) \quad \beta \in (0,1)
 $$
-When $\beta=0.6$, we plot $T$ against $\varepsilon$:
+When $\beta=0.6$, we plot $T$ against $\varepsilon$ in in Figure~\ref{img:CurveLP}.
 
 The BD mechanism and the Laplace mechanism provide similar results. The minimum point of the graph is the optimal privacy budget that comprehensively weighted privacy and overhead.
 
